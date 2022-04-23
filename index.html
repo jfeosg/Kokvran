@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="index.css">
+<title>Arbnamn Kokvrån</title>
+</head>
+
+<header>
+    <h1>Kokvrån</h1>
+    <h4>Din digitala kokvrå i vardagen</h4>
+</header>
+
+<div id="genväg">
+    <a class="hemknapp" href="index.html">Hem</a>
+    <a class="receptknapp" href="recept.html">Recept</a>
+    <a class="slumpknapp" href="slump.html">Slumpa</a>
+   
+</div>
+
+<div id="input">
+    <div class="receptnamn">
+        <label for="receptnamn">Receptnamn</label> 
+        <textarea name="receptnamn" id="receptnamn" cols="30" rows="1"></textarea>
+    </div>
+    <div class="ingredienser">
+        <label for="ingredienser">Ingredienser</label>
+        <textarea name="ingredienser" id="ingredienser" cols="30" rows="1"></textarea>
+    </div>
+    <div class="kategori">
+        <label for="kategori">Kategorier</label>
+        <select name="kategori" id="kategori" multiple size="1">
+            <option value="kött">Kött</option>
+            <option value="fisk">Fisk</option>
+            <option value="fågel">Fågel</option>
+            <option value="vego">Vegetariskt</option>
+            <option value="potatis">Potatis</option>
+            <option value="pasta">Pasta</option>
+            <option value="ris">Ris</option>
+        </select>
+    </div>
+</div>
+
+</html>
