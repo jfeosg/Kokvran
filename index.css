@@ -38,12 +38,11 @@ body{
     overflow-x: auto;
     background-color: #5c5c5c;
     text-align: center;
-    padding-top: 3px;
     font-weight: bold;
 }
 
 .hemknapp {
-    color: white;
+    color: #c9c9c9;
     padding-top: 5px;
     text-decoration: none;
     display: inline-block;
@@ -51,21 +50,41 @@ body{
     height: 50%;
 }
 
-.receptknapp {
+.hemknapp:hover {
+    background-color: #5c5c5c;
     color: white;
+    height: 25px;
+}
+
+.receptknapp {
+    color: #c9c9c9;
+    padding-top: 5px;
     text-decoration: none;
     display: inline-block;
     width: 6.5%;
     height: 50%;
 }
 
-.slumpknapp {
+.receptknapp:hover {
+    background-color: #5c5c5c;
     color: white;
+    height: 25px;
+}
+
+.slumpknapp {
+    color: #c9c9c9;
+    padding-top: 5px;
     text-decoration: none;
     display: inline-block;
-    width: 3%;
+    width: 3.5%;
     height: 50%;
     margin-right: 900px;
+}
+
+.slumpknapp:hover {
+    background-color: #5c5c5c;
+    color: white;
+    height: 25px;
 }
 
 
