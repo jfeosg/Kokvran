@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="ISO-8859-1">
+        <link rel="stylesheet" href="slump.css">
+        <title>Arbnamn Kokvrån</title>
+</head>
+
+<header id="rubrikbar">
+    <div class="rubrik">
+        <h1>Kokvrån</h1>
+        <h5>-Din digitala kokvrå i vardagen</h5>
+    </div>
+    <div class="rubriklogga">
+        <img src="kokvran.png" height="70" width="475" alt="logga">
+    </div>
+</header>
+
+<div id="genväg">
+    <a class="hemknapp" href="index.html">Hem</a>
+    <a class="receptknapp" href="input.html">Lägg in recept</a>
+    <a class="slumpknapp" href="slump.html">Slumpa</a>
+</div>
+
+<body>
+<div class="slumpa">
+     <button onclick="hamtarecept()">Slumpa</button>
+</div>
+
+<div id="recepttext">
+
+</div>
+
+<script>
+function hamtarecept() {
+    var path = '/receptdata/',
+    files = ['1.txt', '2.txt', '3.txt',],
+    n = Math.floor(Math.random()*files.length);
+    var url = (path+files[n]);
+        return document.getElementById("recepttext").innerHTML = url;
+}
+</script>
+
+</body>
+</html>
